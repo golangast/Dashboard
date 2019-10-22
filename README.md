@@ -1,3 +1,13 @@
+The Docker file pulls the dependencies down and ensures same environment.
+
+The docker-compose file orchestrates ports and docker files.
+
+To run this you may need to install Docker like the resource below and
+install docker-compose as well. Once you have everything installed just run
+"sudo docker build -t my-app . " to build the image and then
+"docker-compose up" to run the orchestration of the docker file.
+
+
 Base Resources - https://docs.google.com/document/d/1Zb9GCWPKeEJ4Dyn2TkT-O3wJ8AFc-IMxZzTugNCjr-8/edit?usp=sharing
 
 
