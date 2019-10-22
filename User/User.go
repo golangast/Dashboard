@@ -1,8 +1,6 @@
-package main
+package Users
 
 import "fmt"
-
-type err error
 
 //User for Dashboard.
 type User struct {
@@ -11,10 +9,11 @@ type User struct {
 }
 
 //Creates a User.
-func CreateUser() (error User) {
+func CreateUser() (User, error) {
+	var err error
 	fmt.Println("user created")
 
 	u := User{Name: "jill", Email: "jill@yahoo.com"}
 
-	return u
+	return u, err
 }

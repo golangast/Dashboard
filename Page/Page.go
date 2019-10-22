@@ -1,4 +1,4 @@
-package main
+package Pages
 
 import "fmt"
 
@@ -9,8 +9,9 @@ type Page struct {
 
 //Creates Page method
 func CreatePage() (Page, error) {
+	var err error
 	fmt.Println("create page")
 
 	p := Page{ID: 2}
-	return err, p
+	return p, err
 }

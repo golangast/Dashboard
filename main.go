@@ -2,27 +2,25 @@ package main
 
 import (
 	"fmt"
+	"log"
+	
 
-	Page "github.com/golangast/Dashboard"
-	User "github.com/golangast/Dashboard"
 )
-
-type err error
 
 func main() {
 
 	fmt.Println("....starting")
 	Dashboard()
 
-	err, P := Page.CreatePage()
+	P, err := Page.CreatePage()
 	if err != nil {
-		fmt.Println(err)
+		log.Fatal(err)
 	}
 	fmt.Println(P)
 
-	err, U := User.CreateUser()
+	U, err := User.CreateUser()
 	if err != nil {
-		fmt.Println(err)
+		log.Fatal(err)
 	}
 	fmt.Println(U)
 }
