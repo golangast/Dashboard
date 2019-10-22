@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 
-	Page "github.com/zendrulat123/Dashboard/Page"
-	User "github.com/zendrulat123/Dashboard/User"
+	Page "github.com/golangast/Dashboard"
+	User "github.com/golangast/Dashboard"
 )
 
 type err error
