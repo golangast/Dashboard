@@ -15,11 +15,10 @@ func Serv() {
 	mux := http.NewServeMux()
 	cc := context.Background()
 	//handlers
-
 	mux.HandleFunc("/servers", Handlers.Serves)
 
 	//context handlers
 	contextedMux := Context.AddContext(cc, mux)
-	log.Fatal(http.ListenAndServe(":8080", contextedMux))
+	log.Fatal(http.ListenAndServe(":8081", contextedMux))
 
 }
