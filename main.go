@@ -3,15 +3,17 @@ package main
 import (
 	"fmt"
 	"log"
-	Pages "github.com/golangast/Dashboard/Page"
-	Users "github.com/golangast/Dashboard/User"
+
 	Dashboards "github.com/golangast/Dashboard/Dashboards"
+	Pages "github.com/golangast/Dashboard/Page"
+	Servs "github.com/golangast/Dashboard/Server"
+	Users "github.com/golangast/Dashboard/User"
 )
+
 func main() {
 
 	fmt.Println("....starting")
-	
-
+	Servs.Serv()
 	P, err := Pages.CreatePage()
 	if err != nil {
 		log.Fatal(err)
@@ -30,4 +32,3 @@ func main() {
 	}
 	fmt.Println(D)
 }
-
