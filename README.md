@@ -22,3 +22,8 @@ Docker - https://docs.google.com/document/d/1lqpv7zRxL1DPmlP2KmcsZd9O1JwgfzRzpK3
 
 
 Containers - https://docs.google.com/document/d/1ZSplcWI9GI7ZgBanBynh68x4oGCASPYJGF7AksYq8m8/edit?usp=sharing
+
+
+#app info
+To Run: http://localhost:8081/search
+The Database and api is under Handlers folder
