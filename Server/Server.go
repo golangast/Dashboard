@@ -1,24 +1,25 @@
 package Server
 
 import (
-	"context"
 	"log"
 	"net/http"
 
-	Context "github.com/golangast/Dashboard/Context"
-	Handlers "github.com/golangast/Dashboard/Handler"
+	"github.com/rs/cors"
+
+	Handlers "github.com/golangast/Dashboard/Handlers"
 )
 
 //starts the server
 func Serv() {
 
 	mux := http.NewServeMux()
-	cc := context.Background()
+	//cc := context.Background()
 	//handlers
-	mux.HandleFunc("/servers", Handlers.Serves)
+	mux.HandleFunc("/search", Handlers.Search)
 
 	//context handlers
-	contextedMux := Context.AddContext(cc, mux)
-	log.Fatal(http.ListenAndServe(":8081", contextedMux))
-
+	//contextedMux := Context.AddContext(cc, mux)
+	//log.Fatal(http.ListenAndServe(":8081", contextedMux))
+	handler := cors.Default().Handler(mux)
+	log.Fatal(http.ListenAndServe(":8081", handler))
 }
