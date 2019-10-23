@@ -13,7 +13,6 @@ import (
 func Serv() {
 
 	mux := http.NewServeMux()
-=
 	//handlers
 	mux.HandleFunc("/search", Handlers.Search)
 	handler := cors.Default().Handler(mux)

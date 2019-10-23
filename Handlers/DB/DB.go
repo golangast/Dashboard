@@ -8,7 +8,7 @@ import (
 )
 
 func DB() *sql.Rows {
-	db, err := sql.Open("sqlite3", "./dash2")
+	db, err := sql.Open("sqlite3", "../dash2")
 	if err != nil {
 		fmt.Println(err)
 	} else {
