@@ -12,6 +12,8 @@ Mod files, nested structs, Seperate local files, Server, Context - https://githu
 
 Docker/Docker compose -  https://github.com/golangast/docker-docker-compose
 
+Database/api are under Handlers folder - https://github.com/golangast/db-api
+
 
 
 
@@ -24,8 +26,7 @@ Docker - https://docs.google.com/document/d/1lqpv7zRxL1DPmlP2KmcsZd9O1JwgfzRzpK3
 Containers - https://docs.google.com/document/d/1ZSplcWI9GI7ZgBanBynh68x4oGCASPYJGF7AksYq8m8/edit?usp=sharing
 
 
-#app info
-.
-To Run: http://localhost:8081/search
-.
-The Database and api is under Handlers folder
+
+#To Run: http://localhost:8081/search
+
+#The Database and api is under Handlers folder
